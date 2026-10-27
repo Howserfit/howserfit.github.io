@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Howserfit</title>
+<meta name="description" content="Registra tus series, descansa con cronómetro y progresa con un plan.">
+<meta name="theme-color" content="#F3F2EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F0F0E" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Howserfit">
+<meta name="apple-mobile-web-app-status-bar-style" content="default" id="sbstyle">
+<script>
+  // Aplica el tema antes de pintar para evitar un destello de color.
+  (function () {
+    var t = 'auto';
+    try { t = localStorage.getItem('hf_theme') || 'auto'; } catch (e) {}
+    var dark = t === 'dark' || (t === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (t !== 'auto') document.documentElement.setAttribute('data-theme', t);
+    // Barra de estado del iPhone: negra en oscuro, clara en claro (la isla dinámica y el notch quedan fuera del contenido).
+    document.getElementById('sbstyle').setAttribute('content', dark ? 'black' : 'default');
+  })();
+</script>
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+<div id="app" aria-live="polite"></div>
+<noscript>Howserfit necesita JavaScript activado.</noscript>
+<script src="data.js?v=2"></script>
+<script src="app.js?v=2"></script>
+</body>
+</html>

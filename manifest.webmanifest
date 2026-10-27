@@ -1,0 +1,17 @@
+{
+  "name": "Howserfit",
+  "short_name": "Howserfit",
+  "description": "Registra tus series, descansa con cronómetro y progresa con un plan.",
+  "lang": "es",
+  "start_url": "./#/hoy",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F3F2EF",
+  "theme_color": "#F3F2EF",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
