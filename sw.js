@@ -1,7 +1,7 @@
 // Cache de la app: responde al instante desde caché y actualiza en segundo plano.
-const VERSION = 'howserfit-v2';
+const VERSION = 'howserfit-v3';
 const SHELL = [
-  './', './index.html', './styles.css?v=2', './data.js?v=2', './app.js?v=2',
+  './', './index.html', './styles.css?v=3', './data.js?v=3', './app.js?v=3',
   './manifest.webmanifest', './icons/apple-touch-icon.png', './icons/icon-192.png',
   './icons/icon-512.png', './icons/favicon.png'
 ];
